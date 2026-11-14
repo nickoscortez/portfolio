@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nickos Jimuel Cortez — BSIT Portfolio</title>
+  <meta name="description" content="Bento-style digital portfolio of Nickos Jimuel Cortez, 23-year-old BSIT student at STI College Batangas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Minimalist Preloader -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <div class="preloader-top">
+        <span class="preloader-pct" id="preloaderPct">0%</span>
+        <span class="preloader-label">Loading portfolio</span>
+      </div>
+      <div class="preloader-track">
+        <div class="preloader-bar" id="preloaderBar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Top Pill Navbar (matches reference homepage) -->
+  <header class="floating-nav-wrap">
+    <nav class="floating-nav" aria-label="Primary Navigation">
+      <a href="#home" class="fnav-link active">Home</a>
+      <a href="#about" class="fnav-link">About</a>
+      <a href="#project" class="fnav-link" data-tab-link="tab-projects">Portfolio</a>
+      <a href="#project" class="fnav-link" data-tab-link="tab-certificates">Certificates</a>
+      <a href="#contact" class="fnav-link">Contact</a>
+      <a href="assets/Nickos_Cortez_Resume.pdf" target="_blank" rel="noopener noreferrer" class="fnav-resume" title="Open Resume PDF">Resume ↗</a>
+    </nav>
+  </header>
+
+  <!-- Full-bleed Homepage Hero (AYUMI Slate-Charcoal #646B6E + Hanging Lanyard ID Card) -->
+  <section class="hero-stage" id="home">
+    <div class="hero-stage-inner">
+      <div class="hero-copy">
+        <h1 class="hero-headline">
+          <span class="headline-accent">Welcome to</span>
+          <span class="headline-main">My Portfolio</span>
+        </h1>
+        <p class="hero-kicker">BSIT STUDENT · STI COLLEGE BATANGAS · 23 YEARS OLD</p>
+        <p class="hero-bio">
+          I’m <strong>Nickos Jimuel Cortez</strong> from Tabangao Ambulong, Batangas City. I love experimenting with code, exploring networking and modern tech, and turning ideas into clean, practical web solutions.
+        </p>
+
+        <div class="hero-cta-row">
+          <a href="assets/Nickos_Cortez_Resume.pdf" target="_blank" rel="noopener noreferrer" class="hero-btn hero-btn-primary">
+            View Resume
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+          <a href="#project" class="hero-btn hero-btn-secondary">
+            View Project →
+          </a>
+          <a href="#contact" class="hero-btn hero-btn-ghost">
+            Contact Me
+          </a>
+        </div>
+
+        <div class="find-me-row">
+          <span class="find-me-label">FIND ME</span>
+          <a href="https://www.facebook.com/nickos.cortez.2024" target="_blank" rel="noopener noreferrer" class="find-icon" aria-label="Facebook" title="Facebook">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+          </a>
+          <a href="mailto:nickoscortez0224@gmail.com" class="find-icon" aria-label="Email" title="nickoscortez0224@gmail.com">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+          <a href="tel:+639543564384" class="find-icon" aria-label="Phone" title="+63 954 356 4384">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hanging Lanyard ID Card -->
+      <div class="lanyard-scene">
+        <div class="lanyard-assembly" id="lanyardCard">
+          <div class="lanyard-strap">
+            <span>NICKOS CORTEZ · BSIT</span>
+          </div>
+          <div class="lanyard-clip" aria-hidden="true"></div>
+
+          <div class="id-badge">
+            <div class="id-slot" aria-hidden="true"></div>
+            <div class="id-top-meta">
+              <span class="id-pill">BSIT</span>
+              <span class="id-school">STI BATANGAS</span>
+            </div>
+            <div class="id-big-title">PORTFOLIO</div>
+            <div class="id-body-row">
+              <div class="id-photo-frame">
+                <img src="assets/profile.jpg" alt="Nickos Jimuel Cortez ID Photo" />
+              </div>
+              <div class="id-side-text" aria-hidden="true">BATANGAS CITY</div>
+            </div>
+            <div class="id-nameplate">NICKOS JIMUEL CORTEZ</div>
+            <div class="id-bottom-meta">
+              <span>IT &amp; WEB DEV</span>
+              <span>AGE 23</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="bento-shell">
+
+    <!-- 2. About Me Bento Card -->
+    <section class="bento-card" id="about">
+      <div class="card-head">
+        <h2>About Me</h2>
+        <span class="meta-pill">BSIT · 2023–Present</span>
+      </div>
+      <p class="about-copy">
+        I’m a 23-year-old Information Technology (BSIT) student at STI College Batangas with a strong interest in software development, networking, and practical problem-solving. Through my studies, I’ve built skills in computer systems, database management, web development, and programming—and I enjoy collaborating on projects that turn everyday operational challenges into simple, reliable digital solutions.
+      </p>
+    </section>
+
+    <!-- 3. 2-Column Bento Row: Key Skills + Journey -->
+    <!-- 3. Portfolio Showcase with Segmented Tab Buttons (matches reference UI) -->
+    <section class="showcase-wrap" id="project">
+      <div class="showcase-tabs-outer">
+        <div class="showcase-tabs" role="tablist" aria-label="Portfolio sections">
+          <button type="button" class="showcase-tab active" role="tab" aria-selected="true" data-tab="tab-projects">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            Projects
+          </button>
+          <button type="button" class="showcase-tab" role="tab" aria-selected="false" data-tab="tab-certificates">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+            Certificates
+          </button>
+          <button type="button" class="showcase-tab" role="tab" aria-selected="false" data-tab="tab-skills">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"></path></svg>
+            Key Skills
+          </button>
+          <button type="button" class="showcase-tab" role="tab" aria-selected="false" data-tab="tab-journey">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+            Journey
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab Panel 1: Projects -->
+      <div class="bento-card tab-panel active" id="tab-projects" role="tabpanel">
+        <div class="card-head">
+          <div>
+            <h2>Featured Project</h2>
+            <p class="card-sub">AYUMI: Web Application System with Appointment &amp; Image-Processing</p>
+          </div>
+          <button type="button" class="view-pill" id="toggleProjectDetails">Details →</button>
+        </div>
+
+        <div class="project-bento-grid">
+          <!-- Mini AYUMI UI Preview matching the reference screenshot -->
+          <div class="ayumi-preview">
+            <div class="ayumi-bar">
+              <span class="ayumi-brand">AYUMI</span>
+              <span class="ayumi-nav">Home · Booking · Inventory</span>
+            </div>
+            <div class="ayumi-hero-mini">
+              <p class="ayumi-kicker">ALYA'S NAIL ART &amp; EYELASH EXTENSION SALON</p>
+              <h3>CENTRALIZED SALON &amp; STOCK SYSTEM</h3>
+              <p>Replacing manual spreadsheets for 230+ items with real-time tracking, booking sync, and design previews.</p>
+            </div>
+            <div class="ayumi-stats">
+              <div><strong>230+</strong><span>Items Tracked</span></div>
+              <div><strong>Real-Time</strong><span>Stock Alerts</span></div>
+              <div><strong>AI / Image</strong><span>Design Preview</span></div>
+            </div>
+          </div>
+
+          <div class="project-summary">
+            <p>
+              Built for <strong>Alya’s Nail Art and Eyelash Extension Salon</strong> (an Ayumi franchise founded May 10, 2025 in Pallocan Kanluran, Batangas City). Previously, staff tracked over 230 inventory items manually using spreadsheets and notebooks—causing overlooked low-stock consumables and service delays during 1–2 week online restocks.
+            </p>
+            <ul class="project-bullets">
+              <li>Centralized appointment scheduling and automated service notifications.</li>
+              <li>Real-time inventory deduction and low-stock monitoring to prevent stockouts.</li>
+              <li>Image-processing features for nail and lash design visualization.</li>
+            </ul>
+            <div class="project-actions">
+              <a href="https://ayumi.ph/" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                Visit AYUMI Website (ayumi.ph) ↗
+              </a>
+            </div>
+            <div class="project-extra" id="projectExtra" hidden>
+              <p>
+                <strong>Impact:</strong> Eliminates manual estimation between bookings and stock levels, ensuring essential consumables are replenished before running out while improving customer booking convenience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Panel 2: Certificates -->
+      <div class="bento-card tab-panel" id="tab-certificates" role="tabpanel" hidden>
+        <div class="card-head">
+          <div>
+            <h2>Certifications</h2>
+            <p class="card-sub">Click any certificate to inspect full size</p>
+          </div>
+          <span class="meta-pill">2 Credentials</span>
+        </div>
+
+        <div class="certs-bento-grid">
+          <button type="button" class="cert-tile" data-cert="assets/cert-java.jpg" data-title="Oracle Academy — Java Fundamentals (June 19, 2024)">
+            <div class="cert-thumb">
+              <img src="assets/cert-java.jpg" alt="Oracle Academy Java Fundamentals Certificate" />
+            </div>
+            <div class="cert-meta">
+              <span class="cert-issuer">Oracle Academy</span>
+              <h3>Java Fundamentals</h3>
+              <span class="cert-date">Award of Course Completion · June 19, 2024</span>
+            </div>
+          </button>
+
+          <button type="button" class="cert-tile" data-cert="assets/cert-sap.jpg" data-title="SAP University Alliances &amp; STI — Basic SAP S/4HANA (June 7, 2025)">
+            <div class="cert-thumb">
+              <img src="assets/cert-sap.jpg" alt="SAP S/4HANA Certificate of Participation" />
+            </div>
+            <div class="cert-meta">
+              <span class="cert-issuer">SAP University Alliances · STI College</span>
+              <h3>Basic SAP S/4HANA (Global Bike)</h3>
+              <span class="cert-date">SD, MM, PP, FI, CO · Jan 20 – June 7, 2025</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Tab Panel 3: Key Skills -->
+      <div class="bento-card tab-panel" id="tab-skills" role="tabpanel" hidden>
+        <div class="card-head">
+          <h2>Key Skills</h2>
+          <span class="meta-pill">Core &amp; Technical</span>
+        </div>
+
+        <p class="sub-label">Core Competencies</p>
+        <div class="chip-grid">
+          <span class="skill-chip chip-slate">Computer Networking</span>
+          <span class="skill-chip chip-taupe">IT Troubleshooting &amp; Support</span>
+          <span class="skill-chip chip-dark">Problem-Solving</span>
+          <span class="skill-chip chip-slate">Team Collaboration</span>
+          <span class="skill-chip chip-taupe">Time Management</span>
+          <span class="skill-chip chip-dark">Effective Communication</span>
+        </div>
+
+        <p class="sub-label" style="margin-top: 18px;">Technical Foundations</p>
+        <div class="chip-grid">
+          <span class="skill-chip chip-outline">Java Fundamentals</span>
+          <span class="skill-chip chip-outline">SAP S/4HANA</span>
+          <span class="skill-chip chip-outline">Web Development</span>
+          <span class="skill-chip chip-outline">Database Management</span>
+          <span class="skill-chip chip-outline">Image Processing</span>
+        </div>
+      </div>
+
+      <!-- Tab Panel 4: Journey -->
+      <div class="bento-card tab-panel" id="tab-journey" role="tabpanel" hidden>
+        <div class="card-head">
+          <h2>Journey &amp; Education</h2>
+          <span class="meta-pill">Timeline</span>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot active"></span>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <h3>AYUMI Salon Web System</h3>
+                <span class="timeline-year">2025</span>
+              </div>
+              <p>Built an appointment, inventory, and image-processing web app for Alya’s Nail Art &amp; Eyelash Extension Salon.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <h3>SAP S/4HANA &amp; Java Certifications</h3>
+                <span class="timeline-year">2024–2025</span>
+              </div>
+              <p>Completed Oracle Academy Java Fundamentals and SAP University Alliances S/4HANA (Global Bike) training.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-body">
+              <div class="timeline-top">
+                <h3>BS Information Technology</h3>
+                <span class="timeline-year">2023–Present</span>
+              </div>
+              <p>Pursuing BSIT at STI College Batangas, building foundations in networking, databases, and software systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Centered Quote Banner -->
+    <section class="bento-card quote-card" aria-label="Personal motto">
+      <p class="quote-text">“Continuous learning, practical solutions, and impactful technology.”</p>
+    </section>
+  </main>
+
+  <!-- Full-Width Unified Footer (Contacts as Footer, AYUMI Slate-Charcoal #646B6E) -->
+  <footer class="site-footer-bento" id="contact">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Get in touch</h3>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Actively seeking an OJT / Internship opportunity in IT.</span>
+          </div>
+          <p class="footer-loc">Tabangao Ambulong, Batangas City</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Social &amp; Resume</h3>
+          <div class="stack-links">
+            <a href="https://www.facebook.com/nickos.cortez.2024" target="_blank" rel="noopener noreferrer" class="footer-pill">
+              <span>Facebook</span>
+              <span>↗</span>
+            </a>
+            <a href="assets/Nickos_Cortez_Resume.pdf" target="_blank" rel="noopener noreferrer" class="footer-pill">
+              <span>View Resume (PDF)</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contacts</h3>
+          <div class="stack-links">
+            <a href="mailto:nickoscortez0224@gmail.com" class="footer-pill">
+              <span class="truncate">nickoscortez0224@gmail.com</span>
+            </a>
+            <a href="tel:+639543564384" class="footer-pill">
+              <span>+63 954 356 4384</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Goals</h3>
+          <ul class="goals-list">
+            <li>Apply IT &amp; networking skills in a real-world team</li>
+            <li>Build reliable, user-friendly software systems</li>
+            <li>Keep learning emerging technologies</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Nickos Jimuel Cortez. All rights reserved.</p>
+        <a href="#home" class="back-top-link">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Certificate Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle" hidden>
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <div class="lightbox-header">
+        <p id="lightboxTitle"></p>
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close certificate preview">✕</button>
+      </div>
+      <img id="lightboxImg" src="" alt="" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
