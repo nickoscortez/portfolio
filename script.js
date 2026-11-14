@@ -1,22 +1,6 @@
 // Footer year
 document.getElementById("year").textContent = new Date().getFullYear();
 
-// Minimalist Preloader
-const preloader = document.getElementById("preloader");
-const preloaderPct = document.getElementById("preloaderPct");
-const preloaderBar = document.getElementById("preloaderBar");
-
-let pct = 0;
-const loaderTimer = setInterval(() => {
-  pct = Math.min(100, pct + 20);
-  preloaderPct.textContent = `${pct}%`;
-  preloaderBar.style.width = `${pct}%`;
-  if (pct >= 100) {
-    clearInterval(loaderTimer);
-    setTimeout(() => preloader.classList.add("done"), 150);
-  }
-}, 55);
-
 // Floating pill navbar active link on scroll
 const fnavLinks = document.querySelectorAll(".fnav-link");
 const navTargets = Array.from(fnavLinks)
